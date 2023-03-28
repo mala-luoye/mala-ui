@@ -4,7 +4,7 @@
   "description": "一个基于react18 + ts的前端UI组件库",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint components --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "commit": "git add . && cz"
   },
   "config": {
@@ -18,8 +18,15 @@
   "devDependencies": {
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
     "commitizen": "4.2.4",
     "cz-customizable": "6.3.0",
-    "husky": "7.0.1"
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "7.0.1",
+    "prettier": "^2.8.7"
   }
 }

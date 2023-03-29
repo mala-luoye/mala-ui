@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint components --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "docs:dev": "pnpm --filter document start",
+    "docs:build": "pnpm --filter document build",
+    "docs:serve": "pnpm --filter document serve",
     "commit": "git add . && cz"
   },
   "config": {
@@ -27,6 +30,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "husky": "7.0.1",
-    "prettier": "^2.8.7"
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.2"
   }
 }

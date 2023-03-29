@@ -22,5 +22,7 @@ module.exports = {
     }
   },
   plugins: ["react", "@typescript-eslint"],
-  rules: {}
+  rules: {
+    "@typescript-eslint/no-var-requires": "off"
+  }
 }

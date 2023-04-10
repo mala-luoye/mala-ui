@@ -1,0 +1,13 @@
+{
+  "name": "mala-ui",
+  "version": "0.0.1-alpha",
+  "description": "一个基于React18+ts的前端UI组件库",
+  "main": "lib/mala.js",
+  "module": "lib/mala.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

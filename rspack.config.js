@@ -3,6 +3,7 @@ const CleanRspackPlugin = require("clean-rspack-plugin")
 
 module.exports = {
   mode: "production",
+  devtool: false,
   context: __dirname,
   entry: {
     main: "./packages/components/index.ts"

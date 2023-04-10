@@ -1,7 +1,8 @@
 {
   "name": "mala-ui",
   "version": "1.0.0",
-  "description": "一个基于react18 + ts的前端UI组件库",
+  "private": "true",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "lint": "eslint components --ext .vue,.js,.ts,.jsx,.tsx --fix",

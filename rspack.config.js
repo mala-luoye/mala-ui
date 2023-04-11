@@ -11,6 +11,7 @@ module.exports = {
   output: {
     filename: "mala.js",
     cssFilename: "mala.css",
+    type: "module",
     path: path.resolve(__dirname, "./packages/mala-ui/lib")
   },
 

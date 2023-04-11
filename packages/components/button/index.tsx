@@ -1,5 +1,6 @@
 import React, { FC } from "react"
+import "./style.less"
 
 export const Button: FC = () => {
-  return <div>按钮组件</div>
+  return <div className="mala-button">按钮组件</div>
 }

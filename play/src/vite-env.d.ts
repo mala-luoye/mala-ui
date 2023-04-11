@@ -1,3 +1,3 @@
 /// <reference types="vite/client" />
 
-declare module "mala-ui"
+// declare module "mala-ui"

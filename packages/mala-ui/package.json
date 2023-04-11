@@ -4,6 +4,7 @@
   "description": "一个基于React18+ts的前端UI组件库",
   "main": "dist/mala-ui.cjs.js",
   "module": "dist/mala-ui.es.js",
+  "types": "dist/lib/index.d.ts",
   "files": [
     "dist"
   ],

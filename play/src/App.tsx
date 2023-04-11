@@ -1,12 +1,10 @@
-import mui from "mala-ui"
-
-console.log(mui)
+import { Button } from "mala-ui"
 
 const App = () => {
   return (
     <div className="app">
       <h1>app组件</h1>
-      {/* <Button></Button> */}
+      <Button></Button>
     </div>
   )
 }

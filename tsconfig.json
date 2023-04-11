@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "target": "esnext",
-    "module": "commonjs",
+    "target": "ESNext",
+    "module": "ESNext",
     "jsx": "react",
     "declaration": true,
     "declarationDir": "lib",
@@ -12,6 +12,6 @@
     "esModuleInterop": true,
     "resolveJsonModule": true
   },
-  "include": ["packages/components", "typings.d.ts"],
+  "include": ["packages/components"],
   "exclude": ["node_modules"]
 }

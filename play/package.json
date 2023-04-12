@@ -13,6 +13,7 @@
     "vite": "^4.2.0"
   },
   "dependencies": {
+    "@mala-ui/components": "workspace:^",
     "mala-ui": "workspace:*"
   }
 }

@@ -1,8 +1,8 @@
 import React, { FC } from "react"
-import "./style.less"
+import { MalaButton } from "./index.style"
 
 const Button: FC = () => {
-  return <div className="mala-button">按钮组件</div>
+  return <MalaButton>按钮组件</MalaButton>
 }
 
 export default Button

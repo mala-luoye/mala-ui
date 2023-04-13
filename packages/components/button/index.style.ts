@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { ButtonStyle } from "./index.type"
 import {
   primary_color,
   secondary_color,
@@ -8,7 +9,7 @@ import {
   info_color
 } from "../style"
 
-const typeMapColor = {
+const typeMapBgColor = {
   primary: primary_color,
   secondary: secondary_color,
   success: success_color,
@@ -17,8 +18,8 @@ const typeMapColor = {
   info: info_color
 }
 
-export const MalaButton = styled.div`
-  background-color: ${(props) => typeMapColor[props.type]};
+export const MalaButton = styled.div<ButtonStyle>`
+  background-color: ${(props) => typeMapBgColor[props.type]};
   display: inline-block;
   padding: 5px;
   border-radius: 4px;

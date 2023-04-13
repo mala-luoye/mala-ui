@@ -6,7 +6,12 @@ export type ButtonType =
   | "danger"
   | "info"
 
+// 组件属性类型
 export interface ButtonProps {
   children?: string
-  type?: ButtonProps
+  type?: ButtonType
+}
+// 组件
+export interface ButtonStyle {
+  type: ButtonType
 }

@@ -1,1 +1,1 @@
-export const primaryColor = "purple"
+export * from "./color"

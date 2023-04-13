@@ -35,6 +35,5 @@ export default {
     terser(),
     filesize()
   ],
-  // 指出哪些模块需要被视为外部引入
   external: ["react", "react-dom"]
 }

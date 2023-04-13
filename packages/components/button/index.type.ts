@@ -1,17 +1,11 @@
-export type ButtonType =
-  | "primary"
-  | "secondary"
-  | "success"
-  | "warning"
-  | "danger"
-  | "info"
+type ButtonType = "primary" | "success" | "warning" | "danger" | "info"
 
-// 组件属性类型
+// 属性
 export interface ButtonProps {
   children?: string
   type?: ButtonType
 }
-// 组件
+// 样式
 export interface ButtonStyle {
   type: ButtonType
 }

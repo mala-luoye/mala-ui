@@ -2,7 +2,6 @@ import styled from "styled-components"
 import { ButtonStyle } from "./index.type"
 import {
   primary_color,
-  secondary_color,
   success_color,
   warning_color,
   danger_color,
@@ -11,7 +10,6 @@ import {
 
 const typeMapBgColor = {
   primary: primary_color,
-  secondary: secondary_color,
   success: success_color,
   warning: warning_color,
   danger: danger_color,
@@ -20,9 +18,10 @@ const typeMapBgColor = {
 
 export const MalaButton = styled.div<ButtonStyle>`
   background-color: ${(props) => typeMapBgColor[props.type]};
+  color: #fff;
   display: inline-block;
-  padding: 5px;
-  border-radius: 4px;
+  padding: 8px 12px;
+  border-radius: 6px;
   cursor: pointer;
   margin: 10px;
 `

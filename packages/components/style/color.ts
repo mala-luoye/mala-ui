@@ -1,17 +1,15 @@
 /**
  * 组件库色彩设计：
- * 主题：["primary", "secondary"]
+ * 主题：["primary"]
  * 状态：["success", "warning", "danger", "info"]
  * 中性
  */
 
 /**
  * 主题色
- * primary_color：天青色
- * secondary_color：卡其绿
+ * primary_color：深竹月
  */
-export const primary_color = "#2ec3e7"
-export const secondary_color = "#647370"
+export const primary_color = "#2578b5"
 
 /**
  * 状态色

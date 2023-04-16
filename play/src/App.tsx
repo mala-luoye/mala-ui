@@ -1,15 +1,10 @@
-// import { Button } from "mala-ui"
-import { Button } from "@mala-ui/components"
+import TestButton from "./components/test-button"
 
 const App = () => {
   return (
     <div className="app">
-      <h1>app组件</h1>
-      <Button type="primary">primary</Button>
-      <Button type="success">success</Button>
-      <Button type="warning">warning</Button>
-      <Button type="danger">danger</Button>
-      <Button type="info">info</Button>
+      <h1>组件测试</h1>
+      <TestButton />
     </div>
   )
 }

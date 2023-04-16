@@ -1,39 +1,69 @@
 import styled from "styled-components"
 import { ButtonStyle } from "./index.type"
-import {
-  primary_color,
-  success_color,
-  warning_color,
-  danger_color,
-  info_color,
-  gray1_color,
-  gray2_color
-} from "../style"
+import { color } from "../style"
 
+// type-color映射
 const typeMapColor = {
-  primary: primary_color,
-  success: success_color,
-  warning: warning_color,
-  danger: danger_color,
-  info: info_color
+  primary: [color.primary_color, color.primary4_color],
+  success: [color.success_color, color.success4_color],
+  warning: [color.warning_color, color.warning4_color],
+  danger: [color.danger_color, color.danger4_color],
+  info: [color.info_color, color.info4_color]
 }
 
-const themeMapBgColor = (props: ButtonStyle) => {
+// 根据theme属性计算color和bgcolor
+const calcColorByTheme = (props: ButtonStyle) => {
   switch (props.theme) {
     case "light":
       return {
-        color: typeMapColor[props.type],
-        "background-color": gray2_color
+        color: typeMapColor[props.type][0],
+        "background-color": color.gray1_color
       }
     case "dark":
       return {
-        color: gray1_color,
-        "background-color": typeMapColor[props.type]
+        color: color.gray1_color,
+        "background-color": typeMapColor[props.type][0]
       }
     default:
       return {
-        color: typeMapColor[props.type],
+        color: typeMapColor[props.type][0],
         "background-color": "none"
+      }
+  }
+}
+
+// 根据theme属性计算hover
+const calcHoverByTheme = (props: ButtonStyle) => {
+  switch (props.theme) {
+    case "light":
+      return {
+        "background-color": color.gray2_color
+      }
+    case "dark":
+      return {
+        "background-color": typeMapColor[props.type][1]
+      }
+    default:
+      return {
+        "background-color": color.gray0_color
+      }
+  }
+}
+
+// 根据size属性计算padding
+const calcPaddingBySize = (props: ButtonStyle) => {
+  switch (props.size) {
+    case "large":
+      return {
+        padding: "10px 16px"
+      }
+    case "small":
+      return {
+        padding: "2px 12px"
+      }
+    default:
+      return {
+        padding: "6px 12px"
       }
   }
 }
@@ -41,9 +71,12 @@ const themeMapBgColor = (props: ButtonStyle) => {
 export const MalaButton = styled.div<ButtonStyle>`
   font-size: 14px;
   font-weight: 600;
-  padding: 6px 12px;
   border-radius: 3px;
   display: inline-block;
   cursor: pointer;
-  ${(props) => themeMapBgColor(props)}
+  ${(props) => calcPaddingBySize(props)}
+  ${(props) => calcColorByTheme(props)}
+  :hover {
+    ${(props) => calcHoverByTheme(props)}
+  }
 `

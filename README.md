@@ -1,6 +1,6 @@
 # mala-ui
 
-一个基于 React18 + TS 的前端UI组件库
+一个基于 React18 + TypeScript 的前端UI组件库
 
 ## 项目架构：
 - monorepo

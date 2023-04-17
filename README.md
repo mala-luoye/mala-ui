@@ -9,6 +9,8 @@
 - 代码规范：eslint、prettier
 - 提交规范：commitlint、commitizen、cz-customizable、husky
 - 构建工具：rollup
-- 文档站：docusaurus
+- 文档站：...
 - 测试工具：...
 
+## 搭建过程记录
+- 2023-04-17：docusaurus2.4.0版本不支持react18，其团队计划在3版本中支持react18，故文档站将放弃使用docusaurus。

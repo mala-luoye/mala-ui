@@ -7,6 +7,9 @@
     "lint": "eslint components --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "build": "tsc --noEmit && rollup -c",
     "play": "pnpm --filter play dev",
+    "docs:start": "pnpm --filter site start",
+    "docs:build": "pnpm --filter site build",
+    "docs:serve": "pnpm --filter site serve",
     "commit": "git add . && cz"
   },
   "config": {

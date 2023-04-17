@@ -28,3 +28,34 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* 自定义样式 */
+html[data-theme='light'] .navbar--fixed-top {
+  background-color: hsla(0, 0%, 100%, 0.75);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.75);
+  backdrop-filter: blur(10px);
+}
+
+/* 滚动条样式 */
+html::-webkit-scrollbar {
+  width: 6px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 3px;
+}
+
+/* 底部footer样式 */
+.footer {
+  background-color: #2b3137;
+  padding: 12px 0px 8px 0px;
+}

@@ -9,7 +9,7 @@
 - 代码规范：eslint、prettier
 - 提交规范：commitlint、commitizen、cz-customizable、husky
 - 构建工具：rollup
-- 文档站：...
+- 文档站：nextjs
 - 测试工具：...
 
 ## 搭建过程记录
